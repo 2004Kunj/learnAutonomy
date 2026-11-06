@@ -1,0 +1,3 @@
+app/*.txt -diff linguist-generated
+app/*.json -diff linguist-generated
+app/lib/** linguist-vendored
