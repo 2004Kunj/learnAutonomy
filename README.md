@@ -77,7 +77,7 @@ npm i playwright && node test/browser-smoke.js   # real Chromium render; serve a
 |---|---|
 | `app/index.html` | The whole application (HTML, CSS and JS) |
 | `app/manifest.json`, `app/anatomy.txt` | Standard mesh pack: base64 of gzip of quantised positions, indices and per-vertex shading data |
-| `app/hd.json`, `app/hd1-4.txt` | HD mesh pack, loaded on demand |
+| `app/hd.json`, `app/hd5-8.txt` | HD mesh pack, loaded on demand |
 | `app/nerves.json`, `app/vessels.json` | Nerve and vessel paths with a radius at each point |
 | `app/content.json` | Course notes: OIAI, nerves, vessels, bones, ligaments, bellringers, mnemonics |
 | `app/defs.json` | "About" text for each structure |

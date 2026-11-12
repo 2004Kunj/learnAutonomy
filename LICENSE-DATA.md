@@ -10,7 +10,7 @@ version under the same licence.
 ## Files covered
 
 - `app/anatomy.txt`, `app/manifest.json`: standard mesh pack
-- `app/hd.json`, `app/hd1.txt` to `app/hd4.txt`: HD mesh pack
+- `app/hd.json`, `app/hd5.txt` to `app/hd8.txt`: HD mesh pack
 - `app/nerves.json`, `app/vessels.json`: nerve and vessel paths
 - `app/defs.json`: "About" text for each structure
 - `docs/*.png`: screenshots of the above

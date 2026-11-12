@@ -459,7 +459,7 @@ if(!window.THREE){$('#loadTxt').textContent='The 3D engine could not load. Check
 /* ---------- data ---------- */
 const loadBar=$('#loadBar'),loadTxt=$('#loadTxt');
 /* downloads: kept in the browser cache after the first visit (versioned), retried on flaky connections */
-const DATA_V='z26';const CACHE='kl-data-'+DATA_V;
+const DATA_V='z27';const CACHE='kl-data-'+DATA_V;
 try{if(window.caches)caches.keys().then(ks=>ks.filter(k=>k.startsWith('kl-data-')&&k!==CACHE).forEach(k=>caches.delete(k)))}catch(e){}
 async function fetchData(url,onBytes){
   let cache=null;try{if(window.caches)cache=await caches.open(CACHE)}catch(e){}
@@ -1251,6 +1251,7 @@ for(const k in byK){const st=byK[k][0];let nm=st.name.toLowerCase().replace(/\s*
 /* ligament aliases */
 term('cruciform\\s+lig\\w*|cruciate\\s+lig\\w*\\s+of\\s+(?:the\\s+)?atlas',['lig-transverse-ligament-of-atlas','lig-superior-longitudinal-band-of-cruciform-ligament','lig-inferior-longitudinal-band-of-cruciform-ligament'],'Cruciform ligament');
 term("sibson'?s?\\s+fascia|suprapleural\\s+membrane",['lig-suprapleural-membrane'],'Suprapleural membrane');
+term('g?luteal\\s+aponeurosis|gluteal\\s+fascia|aponeurosis\\s+of\\s+(?:the\\s+)?gluteus\\s+medius',['gluteal-apo'],'Gluteal aponeurosis');
 term('mpfl',['lig-medial-patellofemoral-ligament'],'MPFL');
 term('arcuate\\s+lig\\w*(?!\\s+of)',['lig-median-arcuate-ligament','lig-medial-arcuate-ligament','lig-lateral-arcuate-ligament'],'Arcuate ligaments');
 term('costotransverse\\s+lig\\w*',['lig-costotransverse-ligament','lig-lateral-costotransverse-ligament','lig-superior-costotransverse-ligament'],'Costotransverse ligaments');
