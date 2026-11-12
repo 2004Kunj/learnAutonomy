@@ -11,7 +11,7 @@ An interactive 3D anatomy study tool for **KNES 259, Human Anatomy & Physiology 
 ## What's inside
 
 **The model**
-- 161 muscles, 43 bone groups, 243 ligaments and joint structures, about 100 nerves and about 270 vessels, on both sides of the body. Most of the geometry comes from Z-Anatomy, built on BodyParts3D scan data.
+- 161 muscles, 43 bone groups, 243 ligaments and joint structures, about 130 nerves (every brachial plexus root, trunk, division and cord, and all 12 cranial nerves) and about 270 vessels, on both sides of the body. Most of the geometry comes from Z-Anatomy, built on BodyParts3D scan data.
 - Nerves and vessels are drawn at their true thickness. You can view them on their own or see them through the muscles.
 - Explode view, region and side filters, muscle opacity, a cadaver colouring mode and an HD mesh pack (about 5.5 million triangles).
 
@@ -19,7 +19,7 @@ An interactive 3D anatomy study tool for **KNES 259, Human Anatomy & Physiology 
 - **Explore:** click any structure to see its origin, insertion, action, innervation, clinical notes, memory aids and a longer "About" section.
 - **Index:** search by name, action or nerve. Press `/` anywhere for quick find.
 - **Cadaver lab:** timed bellringer cases and pinned-structure stations, like a lab practical.
-- **Lecture:** open a PDF or PPTX deck and the model follows each slide. A checklist compares the slide's terms against the model, and on-device OCR (Tesseract) reads labels inside slide pictures.
+- **Lecture:** open a PDF or PPTX deck and the model follows each slide. A numbered tracker matches every term on the slide to one structure on the model (the same numbers appear as tags on the model), and lists anything not in the specimen, and on-device OCR (Tesseract) reads labels inside slide pictures.
 - **Study:**
   - daily spaced-repetition review
   - find-it drills
