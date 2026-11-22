@@ -36,7 +36,8 @@ try {
   $sh.TargetPath = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
   $sh.Arguments = '-NoProfile -ExecutionPolicy Bypass -WindowStyle Minimized -File "' + $launcher + '"'
   $sh.WorkingDirectory = $dest
-  $sh.IconLocation = (Join-Path $env:SystemRoot 'System32\SHELL32.dll') + ',13'
+  $ico = Join-Path $dest 'app\icon.ico'
+  if (Test-Path -LiteralPath $ico) { $sh.IconLocation = $ico + ',0' } else { $sh.IconLocation = (Join-Path $env:SystemRoot 'System32\SHELL32.dll') + ',13' }
   $sh.Description = 'Open Anatomy Lab (KNES 259)'
   $sh.Save()
   Remove-Item -LiteralPath $tmp -Recurse -Force -ErrorAction SilentlyContinue
