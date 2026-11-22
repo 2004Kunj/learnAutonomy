@@ -1,6 +1,6 @@
 #!/bin/sh
-# Anatomy Lab installer for macOS and Linux: downloads the app to your Desktop and adds a launcher.
-# Run:  sh install-mac-linux.sh
+# Anatomy Lab installer for Linux: downloads the app to your Desktop and adds a launcher.
+# Run:  sh install-linux.sh
 set -e
 REPO=2004Kunj/learnAutonomy
 DESK="$HOME/Desktop"; [ -d "$DESK" ] || DESK="$HOME"

@@ -56,7 +56,15 @@ The AI features need the page to be opened as a Claude artifact. They run on the
 
 **Windows:** download [`install/Install-AnatomyLab-Windows.bat`](install/Install-AnatomyLab-Windows.bat) and double-click it. It downloads the app to an **Anatomy Lab** folder on your Desktop and adds an **Anatomy Lab** shortcut there. The shortcut starts a small local server using only built-in Windows PowerShell, so nothing else needs installing, and opens the app in your browser. Run the installer again to update.
 
-**macOS / Linux:** download [`install/install-mac-linux.sh`](install/install-mac-linux.sh) and run `sh install-mac-linux.sh`. Then double-click **Start Anatomy Lab.command** in the new Desktop folder. This needs Python 3.
+**macOS:** download [`install/Install-AnatomyLab-Mac.command`](install/Install-AnatomyLab-Mac.command). Open Terminal and run `sh ~/Downloads/Install-AnatomyLab-Mac.command`, or run this one line:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/2004Kunj/learnAutonomy/main/install/install-mac.sh | sh
+```
+
+It puts **Anatomy Lab.app**, with its own icon, on your Desktop. The app runs a tiny local server written in Perl, which comes with macOS, and opens the app in your browser. Nothing else needs installing. The server stops by itself after 4 hours with no use. Run the installer again to update.
+
+**Linux:** run `sh install/install-linux.sh`. It needs Python 3.
 
 The local copy works offline once it has loaded. Lecture PDF/PPTX reading and slide-picture OCR load their libraries from the internet the first time. The AI tutor only works when the app is opened as a Claude artifact.
 
