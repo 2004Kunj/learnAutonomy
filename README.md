@@ -52,6 +52,14 @@ The AI features need the page to be opened as a Claude artifact. They run on the
 | `R` | Reset |
 | `?` | Help |
 
+## Install on your computer
+
+**Windows:** download [`install/Install-AnatomyLab-Windows.bat`](install/Install-AnatomyLab-Windows.bat) and double-click it. It downloads the app to an **Anatomy Lab** folder on your Desktop and adds an **Anatomy Lab** shortcut there. The shortcut starts a small local server using only built-in Windows PowerShell, so nothing else needs installing, and opens the app in your browser. Run the installer again to update.
+
+**macOS / Linux:** download [`install/install-mac-linux.sh`](install/install-mac-linux.sh) and run `sh install-mac-linux.sh`. Then double-click **Start Anatomy Lab.command** in the new Desktop folder. This needs Python 3.
+
+The local copy works offline once it has loaded. Lecture PDF/PPTX reading and slide-picture OCR load their libraries from the internet the first time. The AI tutor only works when the app is opened as a Claude artifact.
+
 ## Run it
 
 The app is plain static files with no build step. It has to be served over HTTP; opening the file directly won't work.
